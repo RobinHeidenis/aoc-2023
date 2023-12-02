@@ -1,12 +1,22 @@
-# ts-aoc-starter
+<div align="center">
+    <a href="https://adventofcode.com">
+        <img src="public/logo.png" alt="Logo" width="80" height="80">
+    </a>
+    <h1>Advent of Code 2023</h1>
+    <p><b><i>My solutions for Advent of Code 2023</i></b></p>
+    <p><i>Now neatly organized!</i></p>
 
-## Getting Started
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![NX](https://img.shields.io/badge/nx-143055?style=for-the-badge&logo=nx&logoColor=white)](https://nx.dev)
 
-```terminal
-npx create-ts-aoc-starter
-```
+</div>
 
-This will create a new workspace in the current directory with the following structure:
+
+## Created with ts-aoc-starter
+For this year I chose to use a starter to organize the code.
+I used [ts-aoc-starter](https://github.com/nrwl/ts-aoc-starter)
+
+The repository is organized per day. Every day has a separate folder. The folder structure is outlined below.
 
 ```file-tree
 ts-aoc-starter
@@ -22,34 +32,31 @@ ts-aoc-starter
 │   ├── day-3
 ```
 
-## Running the Puzzles
+Sample input for the day is placed in the `day-[x]-[part].sample-data.txt`. Actual input is placed in `day-[x]-[part].data.txt`.
+The NX template takes care of loading the proper data file.
 
-Copy and paste the sample data given in the problem into the `day-X-a.sample-data.txt` file.
+The code can then be written in `day-[x]-[part].ts` files.
 
-Copy and paste your larger unique actual data set into the `day-X-a.data.txt` file.
+### Running a puzzle
+To run a puzzle with sample data, one of the following commands can be run:
 
-Add your solution to the `day-X-a.ts` file.
+```bash
+pnpm day-1-a:sample
+```
 
-To run your solution against your sample data set, run the following command:
+or
 
-```terminal
+```bash
 nx day-1-a --data=sample
 ```
+To run the solution against the actual data set, run the following command:
+
+```bash
+pnpm day-1-a
+```
 
 or
 
-```terminal
-pnpm run day-1-a:sample
-```
-
-To run your solution against your actual data set, run the following command:
-
-```terminal
+```bash
 nx day-1-a
-```
-
-or
-
-```terminal
-pnpm run day-1-a
 ```
