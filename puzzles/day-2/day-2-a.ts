@@ -7,9 +7,6 @@ const maxValues = {
   blue: 14,
 };
 
-// Example line:
-// Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
-
 export async function day2a(dataPath?: string) {
   const data = await readData(dataPath);
 
@@ -28,11 +25,8 @@ export async function day2a(dataPath?: string) {
     const revealItems = rest.split(';').flatMap((reveal) => reveal.split(','));
 
     revealItems.forEach((item) => {
-      const numberRegex = /(\d+)/;
-      const colourRegex = /(green|blue|red)/;
-
-      const number = Number(item.match(numberRegex)[0]);
-      const [colour] = item.match(colourRegex);
+      const number = Number(item.match(/(\d+)/)[0]);
+      const [colour] = item.match(/(green|blue|red)/);
 
       const currentMax = colourValues[colour];
 
