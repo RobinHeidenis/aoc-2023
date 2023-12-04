@@ -35,7 +35,7 @@ ts-aoc-starter
 Sample input for the day is placed in the `day-[x]-[part].sample-data.txt`. Actual input is placed in `day-[x]-[part].data.txt`.
 The NX template takes care of loading the proper data file.
 
-> [!WARN]
+> [!WARNING]
 > Because AOC input is copyrighted, you'll have to provide your own input. The input files are not provided in this repository.
 > You'll have to create your own `day-[x]-[part].sample-data.txt` and `day-[x]-[part].data.txt` files.
 
