@@ -11,8 +11,8 @@
 
 </div>
 
-
 ## Created with ts-aoc-starter
+
 For this year I chose to use a starter to organize the code.
 I used [ts-aoc-starter](https://github.com/nrwl/ts-aoc-starter)
 
@@ -35,9 +35,14 @@ ts-aoc-starter
 Sample input for the day is placed in the `day-[x]-[part].sample-data.txt`. Actual input is placed in `day-[x]-[part].data.txt`.
 The NX template takes care of loading the proper data file.
 
+> [!WARN]
+> Because AOC input is copyrighted, you'll have to provide your own input. The input files are not provided in this repository.
+> You'll have to create your own `day-[x]-[part].sample-data.txt` and `day-[x]-[part].data.txt` files.
+
 The code can then be written in `day-[x]-[part].ts` files.
 
 ### Running a puzzle
+
 To run a puzzle with sample data, one of the following commands can be run:
 
 ```bash
@@ -49,6 +54,7 @@ or
 ```bash
 nx day-1-a --data=sample
 ```
+
 To run the solution against the actual data set, run the following command:
 
 ```bash

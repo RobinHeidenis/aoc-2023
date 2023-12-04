@@ -39,3 +39,6 @@ testem.log
 Thumbs.db
 
 .nx/cache
+
+**/day-*-*.data.txt
+**/day-*-*.sample-data.txt
