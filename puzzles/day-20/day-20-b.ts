@@ -93,7 +93,7 @@ const lcm = (arr: number[]) => {
   return [...arr].reduce((a, b) => _lcm(a, b));
 };
 
-export async function day20a(dataPath?: string) {
+export async function day20b(dataPath?: string) {
   const data = await readData(dataPath);
   const moduleMap = initModuleMap(data);
 
@@ -177,5 +177,5 @@ export async function day20a(dataPath?: string) {
   }
 }
 
-const answer = await day20a();
+const answer = await day20b();
 console.log(chalk.bgGreen('Your Answer:'), chalk.green(answer));
